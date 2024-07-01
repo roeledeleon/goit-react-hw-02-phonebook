@@ -46,10 +46,10 @@ export class App extends Component {
     const { contacts, filter } = this.state;
     return (
       <div className={css.wrapper}>
-        <h1>Phonebook</h1>
+        <h1 className={css.title}>Phonebook</h1>
         <ContactForm addContact={this.addContact} contacts={contacts} />
 
-        <h2>Contacts</h2>
+        <h2 className={css.title}>Contacts</h2>
         <Filter filter={filter} setFilter={this.setFilter} />
         <ContactList
           filterContact={this.filterContact}

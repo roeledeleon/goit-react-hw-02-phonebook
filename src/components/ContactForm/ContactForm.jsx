@@ -82,6 +82,7 @@ export class ContactForm extends Component {
             required
             value={name}
             onChange={this.handleNameChange}
+            className={css.input}
           />
         </label>
 
@@ -96,6 +97,7 @@ export class ContactForm extends Component {
             required
             value={number}
             onChange={this.handleNumberChange}
+            className={css.input}
           />
         </label>
         <button className={css.formButton} type="submit">
